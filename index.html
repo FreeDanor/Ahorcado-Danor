@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>Ahorcado DOM</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style-ahorcado.css">
+    </head>
+
+    <body>
+        <header> 
+            <h1><img src="eagle-wings.jpg" alt="Imagen de Presentación del Programador"></h1>
+        </header>
+
+        <main>
+            
+            <div id="botones-inicio">
+                <button id="inicia-juego" onclick="iniciarJuego()">Iniciar Juego</button>
+                <button id="nueva-palabra" onclick="escribirPalabra()">Agregar Nueva Palabra</button>
+            </div>
+
+            <section id="palabra-nueva">
+                <div>
+                    <textarea id="input-texto" cols="40" rows="6" maxlength="8" placeholder="Ingrese la palabra"></textarea>
+                </div>
+
+                <div>
+                    <label for="input-texto"> ⚠  Máx. 8 caracteres</label>
+                </div>
+
+                <div id="botones-nueva-palabra">
+                    <button id="btn-guardar" onclick="guardarPalabra()">Empezar</button>
+                    <button id="btn-cancelar" onclick="salirNuevaPalabra()">Salir</button>
+                </div>
+            </section>
+
+            <div class="canvas">
+                <canvas id="pizarra" width="1349" height="863"></canvas>
+            </div>
+
+            <div id="botones-canvas">
+                <button id="btn-reiniciar" onclick="reiniciar()">Nuevo Juego</button>
+                <button id="btn-rendirse" onclick="renunciar()">Salir</button>
+            </div>
+
+        </main>
+
+        <script src="realizacion.js"></script>
+        <script src="canvas.js"></script>
+    </body>
+
+</html>

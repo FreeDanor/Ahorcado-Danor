@@ -1,0 +1,167 @@
+body{
+    position: relative;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    background: url(pizarra.jpg);
+    background: size 100%;
+}
+
+h1 img{
+    position: absolute;
+    left: 5%;
+    right: 37.43%;
+    top: 5%;
+    bottom: 0%;
+    width: 75px;
+    height:75px;
+}
+
+#inicia-juego{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 27px;
+    width: 23.3%;
+    height: 10%;
+    left: 40%;
+    top: 37%;
+    background: burlywood;
+    border: 1.5px solid black;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    justify-content: center;
+    color: white;
+}
+
+#nueva-palabra{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    width: 20.7%;
+    height: 7.8%;
+    left: 41.5%;
+    top: 51.9%;
+    border: none;
+    border-radius: 18px;
+    font-weight: 600;
+    font-size: 18px;
+    justify-content: center;
+    color: darkgreen;
+}
+
+#input-texto{
+    position: absolute;
+    width: 50%;
+    height: auto;
+    left: 27%;
+    top: 30%;
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 150%;
+    justify-content: baseline;
+    text-align: center;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    outline: none;
+}
+::placeholder{
+    color: white;
+}
+
+#input-texto:focus::placeholder{
+    color: transparent;
+}
+
+label{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    left: 30%;
+    top: 71%;
+    font-weight: 600;
+    font-family: Montserrat;
+    font-size: 18px;
+    color: white;
+}
+
+#btn-guardar{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 11px;
+    width: 15%;
+    height: 5.5%;
+    left: 31%;
+    top: 75%;
+    background: burlywood;
+    border-radius: 16px;
+    border: 0.5px;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    justify-content: center; 
+}
+
+#btn-cancelar{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 11px;
+    width: 15%;
+    height: 5.5%;
+    left: 57.5%;
+    top: 75%;
+    border-radius: 16px;
+    border: none;
+    color: darkgreen;
+    font-weight: 600;
+    font-size: 22px;
+    justify-content: center; 
+}
+
+#btn-reiniciar{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 11px;
+    width: 15%;
+    height: 5.5%;
+    left: 31%;
+    top: 90%;
+    background: burlywood;
+    border-radius: 16px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    justify-content: center; 
+}
+
+#btn-rendirse{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 11px;
+    width: 15%;
+    height: 5.5%;
+    left: 57.5%;
+    top: 90%;
+    border-radius: 16px;
+    border: none;
+    color: darkgreen;
+    font-weight: 600;
+    font-size: 22px;
+    justify-content: center; 
+}
+
